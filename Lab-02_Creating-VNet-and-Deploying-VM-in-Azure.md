@@ -20,7 +20,7 @@ Fill in the following:
 
 - **Subscription:** Your free trial subscription
 - **Resource Group Name:** something like `lab-rg` or `devops-lab-rg`
-- **Region:** Choose the one closest to you. For India, go with **Central India** or **South India**
+- **Region:** Select **East US** (most cost effective and has the widest service availability)
 
 Click **Review + Create** and then **Create**. Done in under a minute.
 
@@ -48,7 +48,7 @@ Now for the main part. Search for **Virtual Machines** in the portal and click *
 - **Subscription:** Free Trial
 - **Resource Group:** Same one you've been using
 - **Virtual Machine Name:** give it something simple like `lab-vm`
-- **Region:** Same region as your VNet
+- **Region:** East US
 - **Image:** Ubuntu Server 22.04 LTS (this is free tier eligible)
 - **Size:** Click "See all sizes" and pick **Standard_B1s** as it falls under the free tier
 - **Authentication type:** SSH public key
@@ -122,7 +122,7 @@ Go back to your VM in the portal, click **Networking** on the left side, and che
 Make sure you're pointing to the correct `.pem` file path and that you ran `chmod 400` on it first. On Windows using MobaXterm, load the key through the session settings under Advanced SSH settings.
 
 **VM size not available in your region**  
-Try switching the region to East US or West Europe. Not all VM sizes are available in every region.
+Stick with East US as it has the broadest VM size availability. If it still doesn't show, try West US 2 as a fallback.
 
 **Deployment failed**  
 Check the error message in the deployment details. It's usually either a quota issue (free accounts have limits) or a name conflict. Rename the VM or try a different region.
@@ -133,4 +133,4 @@ If you're done experimenting and want to avoid using up your free credits, go to
 
 ## What's Next
 
-You've got a VNet set up and a VM running inside it. In the next lab, we'll go further 
+You've got a VNet set up and a VM running inside it. In the next lab, we'll go further by 
