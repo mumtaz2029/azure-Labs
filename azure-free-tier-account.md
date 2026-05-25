@@ -51,6 +51,4 @@ Give it a couple of minutes and refresh. The backend sometimes takes a bit to fi
 
 ## What's Next
 
-Your Azure account is live. In the next lab, we'll use it to create a Linux virtual machine, connect to it over SSH, and run a few basic commands. That's where things start to get interesting.
-
-**Lab 02: Creating and Connecting to an Azure Virtual Machine**
+Your Azure account is live. In the next lab, we'll use it to create  Virtual Network (VNet) and deploy a Virtual Machine (VM) in Azure 
