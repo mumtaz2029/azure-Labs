@@ -1,174 +1,69 @@
+# Lab 01 — Setting Up Your Azure Free Account
 
-# Lab 01 — Creating an Azure Free Tier Account
-
-**Lab Duration:** 15–20 minutes  
-**Difficulty:** Beginner  
-**Prerequisites:** A valid email address, a phone number for verification, and a credit/debit card (for identity verification — you will not be charged)
+**Estimated Time:** 15–20 minutes  
+**Level:** Beginner
 
 ---
 
-## Overview
+## Before You Start
 
-Before you can start deploying virtual machines, setting up storage, or building cloud infrastructure, you need a place to do it. Microsoft Azure's free tier gives you exactly that — a fully functional cloud account with $200 in credits for the first 30 days, plus 55+ services that remain free for 12 months.
-
-This lab walks you through signing up for an Azure free account step by step. By the end, you'll have access to the Azure Portal and be ready to start your hands-on cloud journey.
+You'll need three things: an email address, a phone number, and a debit or credit card. The card is just for identity verification — Microsoft won't charge you unless you manually upgrade your account later. Keep that in mind if that's been stopping you from signing up.
 
 ---
 
-## What You Get with the Azure Free Tier
+## Why Free Tier?
 
-| Benefit | Details |
-|---|---|
-| **$200 credit** | Valid for the first 30 days — use it to explore any Azure service |
-| **12 months free** | Popular services like VMs, Blob Storage, and SQL Database at no cost |
-| **Always-free services** | 55+ services free forever, including Azure Functions, App Service (F1 tier), and more |
-| **No auto-charges** | Your account won't be charged unless you explicitly upgrade to Pay-As-You-Go |
+When you're just getting started with Azure, you don't want to worry about costs every time you spin up a resource. The free account gives you $200 in credits for the first 30 days, which is more than enough to get through beginner labs without touching your wallet. After 30 days, a bunch of services stay free for 12 months — things like Linux VMs (limited hours), Blob Storage, and Azure SQL Database.
+
+The account doesn't auto-charge you once the trial ends. You'd have to actively upgrade it, so there's no surprise bill waiting for you.
 
 ---
 
-## Step-by-Step Instructions
+## Creating the Account
 
-### Step 1 — Go to the Azure Free Account Page
+Head over to [azure.microsoft.com/free](https://azure.microsoft.com/en-us/free) and hit **Start free**.
 
-Open your browser and navigate to:
+You'll be asked to sign in with a Microsoft account. If you already have one — Outlook, Hotmail, anything from Microsoft — just use that. If not, create a new one right there. It takes two minutes.
 
-```
-https://azure.microsoft.com/en-us/free
-```
-
-Click the **"Start free"** button on the homepage.
-
->  **Tip:** Use a personal email address for this account, not a work or university email — those may already be tied to an existing Azure Active Directory tenant, which can cause issues during signup.
+> One thing worth noting: if you're using a college or work email, it might already be linked to an existing Azure tenant. That can cause issues during signup. A personal email works best here.
 
 ---
 
-### Step 2 — Sign In or Create a Microsoft Account
+## Filling Out the Registration Form
 
-You'll be prompted to sign in with a Microsoft account.
+Once you're signed in, Azure takes you to the actual signup form. Fill in your name, country, and contact email. When you hit the phone verification step, go with **Text me** — it's faster than the call option. Enter the code you receive and move on.
 
-- **If you already have one** (Outlook, Hotmail, Xbox, etc.) — go ahead and sign in.
-- **If you don't have one** — click **"Create one"** and follow the prompts to set up a new Microsoft account. This takes about 2 minutes.
+The card step comes right after. Enter your card details, and Azure runs a small verification check. Nothing gets charged at this point.
 
-Once signed in, Azure will redirect you to the free account registration form.
-
----
-
-### Step 3 — Fill In Your Profile Details
-
-Complete the registration form with the following:
-
-- **Country/Region** — Select your country (e.g., India)
-- **First and Last Name**
-- **Email address** — This will be your account contact email
-- **Phone number** — Required for identity verification
-
-Click **"Next"** when done.
+Agree to the terms and click **Sign up**. The account usually activates within a minute.
 
 ---
 
-### Step 4 — Verify Your Identity by Phone
+## Getting Into the Portal
 
-Azure will send a verification code to the phone number you provided.
+Once it's done, click **Go to Azure Portal** — or just open [portal.azure.com](https://portal.azure.com) directly.
 
-1. Choose **"Text me"** or **"Call me"** — SMS is usually faster
-2. Enter the 6-digit code you receive
-3. Click **"Verify code"**
-
-This step confirms you're a real person and not a bot. It's quick and straightforward.
+To confirm everything's working, type **Subscriptions** in the search bar at the top. You should see something like *Azure subscription 1* or *Free Trial* with a status of **Active**. If you see that, you're good to go.
 
 ---
 
-### Step 5 — Verify Your Identity by Card
+## If Something Goes Wrong
 
-Next, you'll be asked to enter a credit or debit card number.
+**The email is already in use**  
+This usually means it's tied to an existing Microsoft or Azure account. Try a different email.
 
-> ⚠️ **Important:** Microsoft uses this only for identity verification. You will **not** be charged as long as you stay within the free tier limits. Your account is protected from surprise charges — Microsoft requires you to manually upgrade before any billing begins.
+**Card declined**  
+Prepaid and some virtual cards don't go through. Use a regular debit or credit card.
 
-Enter your card details and click **"Next"**.
+**Didn't receive the SMS code**  
+Double-check the country code and number. If it still doesn't come through, request a new one or use the call option.
 
----
-
-### Step 6 — Review the Agreement and Sign Up
-
-Read through the subscription agreement and privacy statement. When ready:
-
-- Check the box to agree to the terms
-- Click **"Sign up"**
-
-Azure will take a moment to set up your account. You should see a confirmation screen within 30–60 seconds.
+**Subscription not showing after signup**  
+Give it a couple of minutes and refresh. The backend sometimes takes a bit to finish provisioning.
 
 ---
 
-### Step 7 — Access the Azure Portal
+## What's Next
 
-Once your account is created, click **"Go to Azure Portal"** or navigate directly to:
+Your Azure account is live. In the next lab, we'll use it to create a Vnet and deploy a Virtual Machine.
 
-```
-https://portal.azure.com
-```
-
-Log in with the Microsoft account you used during registration. You're now inside the Azure Portal — the central dashboard from which you'll manage all your cloud resources.
-
----
-
-## Verifying Your Setup
-
-Take a moment to confirm everything is in order:
-
-1. In the top-right corner of the portal, click on your profile icon — you should see your name and email
-2. In the search bar, type **"Subscriptions"** and press Enter
-3. You should see a subscription listed as **"Azure subscription 1"** or **"Free Trial"** with a status of **Active**
-
-If the subscription shows as **Active**, your account is set up correctly and ready to use.
-
----
-
-## Common Issues and How to Resolve Them
-
-**"This email is already associated with an Azure account"**  
-Your email may be tied to an existing Microsoft account or Azure tenant. Try signing up with a different email address.
-
-**Card was declined during verification**  
-Some prepaid cards or virtual cards are not accepted. Use a standard credit or debit card. The card is only used for identity verification and won't be charged.
-
-**Verification code not received**  
-Check that the phone number was entered correctly with the right country code. If the SMS doesn't arrive within 2 minutes, request a new code or choose the "Call me" option instead.
-
-**Portal loads but shows no subscription**  
-Wait a few minutes and refresh the page. Account provisioning sometimes takes 2–5 minutes to complete on the backend.
-
----
-
-## Key Terms to Know
-
-| Term | What It Means |
-|---|---|
-| **Azure Portal** | The web-based dashboard at portal.azure.com where you manage all Azure resources |
-| **Subscription** | The billing container that groups your Azure resources together |
-| **Resource Group** | A logical container used to organize related Azure resources |
-| **Free Tier** | A set of services available at no cost, either for 12 months or always-free |
-| **$200 Credit** | A one-time credit applied to your account for the first 30 days of your free trial |
-
----
-
-## Summary
-
-In this lab, you:
-
-- Created a Microsoft account (or used an existing one)
-- Signed up for an Azure free tier account
-- Verified your identity via phone and card
-- Accessed the Azure Portal for the first time
-- Confirmed your free trial subscription is active
-
-You now have a live Azure account with $200 in credits and access to over 55 free services. In the next lab, we'll use this account to spin up your first virtual machine on Azure.
-
----
-
-## Next Lab
-
-**Lab 02 — Creating and Connecting to an Azure Virtual Machine (Ubuntu)**
-
----
-
-*Lab authored as part of the Azure & DevOps Hands-On Series*
